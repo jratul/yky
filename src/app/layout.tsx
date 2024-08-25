@@ -14,28 +14,13 @@ const pretendard = localFont({
   variable: "--font-pretendard",
 });
 
-const aldrich = localFont({
-  src: "./fonts/Aldrich-Regular.ttf",
-  display: "swap",
-  variable: "--font-aldrich",
-});
-
-const newamsterdam = localFont({
-  src: "./fonts/NewAmsterdam-Regular.ttf",
-  display: "swap",
-  variable: "--font-newamsterdam",
-});
-
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="ko"
-      className={`${pretendard.variable} ${aldrich.variable} ${newamsterdam.variable}`}
-    >
+    <html lang="ko" className={`${pretendard.variable}`}>
       <body className={"font-pretendard tracking-tight text-white"}>
         {children}
       </body>

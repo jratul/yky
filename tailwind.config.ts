@@ -10,8 +10,6 @@ const config: Config = {
     extend: {
       fontFamily: {
         pretendard: ["var(--font-pretendard)"],
-        aldrich: ["var(--font-aldrich)"],
-        newamsterdam: ["var(--font-newamsterdam)"],
       },
     },
   },

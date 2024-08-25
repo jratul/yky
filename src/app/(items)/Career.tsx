@@ -24,6 +24,9 @@ export default function Career() {
                 <div className="w-12">
                   <img src="/images/typescript.png" alt="typescript" />
                 </div>
+                <div className="w-12">
+                  <img src="/images/mui.png" alt="mui" />
+                </div>
                 <div className="w-40">
                   <img src="/images/electron.png" alt="electron" />
                 </div>

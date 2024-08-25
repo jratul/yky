@@ -19,7 +19,7 @@ export default function Carousel() {
   };
 
   return (
-    <div className="w-screen h-screen overflow-hidden z-10">
+    <div className="w-screen h-screen overflow-hidden">
       <div
         style={{ transform: `translateX(-${100 * idx}vw)` }}
         className={`w-[${
@@ -28,12 +28,22 @@ export default function Carousel() {
       >
         {data.map((item) => item)}
       </div>
+      <div className="fixed w-full top-5 left-0 text-center">
+        {data.map((_, i) => (
+          <span
+            className="text-3xl text-violet-700 mr-3 cursor-pointer hover:text-violet-300"
+            key={i}
+          >
+            {i === idx ? <span>●</span> : <span>○</span>}
+          </span>
+        ))}
+      </div>
       <ChevronLeftIcon
-        className="w-20 h-20 absolute text-5xl font-bold left-2 top-[50vh] cursor-pointer z-20 hover:text-violet-300"
+        className="w-20 h-20 absolute text-5xl font-bold left-2 top-[50vh] cursor-pointer hover:text-violet-300"
         onClick={handleLeft}
       />
       <ChevronRightIcon
-        className="w-20 h-20 absolute text-5xl font-bold right-2 top-[50vh] cursor-pointer z-20 hover:text-violet-300"
+        className="w-20 h-20 absolute text-5xl font-bold right-2 top-[50vh] cursor-pointer hover:text-violet-300"
         onClick={handleRight}
       />
     </div>

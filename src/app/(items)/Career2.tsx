@@ -34,6 +34,7 @@ export default function Career2() {
         <div className="text-2xl text-gray-400 mb-3">2016/06 ~ 2017/08</div>
         <div>컴퓨터 공학 전공 / 학사</div>
         <div>4.0 / 4.5 학점</div>
+        <div>성적</div>
       </div>
     </div>
   );

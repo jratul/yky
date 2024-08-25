@@ -15,7 +15,7 @@ export default function Intro() {
         <div className="flex gap-3 items-center text-2xl lg:text-5xl mb-3">
           <EnvelopeIcon className="w-5 h-5 lg:w-10 lg:h-10" /> jratul3@gmail.com
         </div>
-        <div className="flex gap-3 items-center text-2xl lg:text-5xl mb-3">
+        <div className="flex gap-3 items-center text-2xl lg:text-5xl mb-5">
           <div className="w-5 h-5 lg:w-10 lg:h-10">
             <img src="/images/github.png" alt="github" />
           </div>

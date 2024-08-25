@@ -7,6 +7,7 @@ import Career from "./(items)/Career";
 import Career2 from "./(items)/Career2";
 import Switchers from "./(items)/Switchers";
 import Zephyr from "./(items)/Zephyr";
+import Bamdokkabi from "./(items)/Bamdokkabi";
 
 const data = [
   <Intro key={0} />,
@@ -14,6 +15,7 @@ const data = [
   <Career2 key={2} />,
   <Switchers key={3} />,
   <Zephyr key={4} />,
+  <Bamdokkabi key={5} />,
 ];
 
 export default function Carousel() {

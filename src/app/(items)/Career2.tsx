@@ -9,10 +9,10 @@ export default function Career2() {
         <div className="text-3xl text-violet-500 font-bold">
           SW Maestro 7기 창업 인증
         </div>
+        <div className="text-2xl text-gray-400 mb-3">2016/06 ~ 2017/08</div>
         <div className="w-1/2 lg:w-1/3">
           <img src="/images/swmaestro.jpg" alt="swmaestro" className="my-5" />
         </div>
-        <div className="text-2xl text-gray-400 mb-3">2016/06 ~ 2017/08</div>
         <p>
           SW 인재 육성 정부 지원 사업인
           <br />

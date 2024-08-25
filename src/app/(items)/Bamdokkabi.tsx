@@ -9,12 +9,6 @@ export default function Bamdokkabi() {
           밤도깨비 야시장
         </div>
         <div className="text-2xl text-gray-400 mb-3">2018/06</div>
-        <iframe
-          src="https://www.youtube.com/embed/PwgYwDbmkDY"
-          title="밤도깨비 야시장 홈페이지"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          className="w-full lg:w-2/3 h-1/2"
-        ></iframe>
         <div className="flex gap-3 items-center my-3">
           <div className="w-36">
             <img src="/images/html-js-css.png" alt="html js css" />
@@ -23,6 +17,12 @@ export default function Bamdokkabi() {
             <img src="/images/jquery.png" alt="jquery" />
           </div>
         </div>
+        <iframe
+          src="https://www.youtube.com/embed/PwgYwDbmkDY"
+          title="밤도깨비 야시장 홈페이지"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          className="w-full lg:w-2/3 h-1/2 my-3"
+        />
         <p>
           밤도깨비 야시장 홍보 페이지입니다.
           <br />

@@ -1,6 +1,5 @@
-import DashedDivider from "@/components/DashedDivider";
-import Divider from "@/components/Divider";
 import Link from "next/link";
+import Divider from "@/components/Divider";
 
 export default function Career() {
   return (
@@ -12,7 +11,7 @@ export default function Career() {
           2018/08 ~ 재직 중(6년)
         </div>
         <div className="ml-2">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-2 ">
+          <div className="grid grid-cols-2 gap-2 ">
             <div className="mb-1">
               <div className="text-xl text-violet-300 font-semibold">
                 EDA(회로 설계 자동화) Flow 자동화 툴 개발
@@ -36,7 +35,6 @@ export default function Career() {
                 개발했습니다.
               </p>
             </div>
-            <DashedDivider />
             <div className="mb-3">
               <div className="text-xl text-violet-300 font-semibold">
                 반도체 회로 설계 툴
@@ -65,7 +63,7 @@ export default function Career() {
         <div className="text-3xl text-violet-500 font-bold">
           안드로메다 주식회사
         </div>
-        <div className="grid grid-cols-1 lg:grid-cols-2">
+        <div className="grid grid-cols-2">
           <div className="col-span-1">
             <div className="text-2xl text-gray-400 mb-3">
               2015/06 ~ 2016/06(1년)
@@ -78,10 +76,10 @@ export default function Career() {
                 <img src="/images/android.png" alt="android" />
               </div>
               <p>
-                전화를 걸 때 광고를 듣고 리워드를 적립받는{" "}
-                <span className="text-violet-300">안드로이드 앱</span>
+                전화를 걸 때 광고를 듣고 리워드를 적립받는
                 <br />
-                애드링 개발에 참여했습니다.
+                <span className="text-violet-300">안드로이드 앱</span> 애드링
+                개발에 참여했습니다.
               </p>
 
               <Link
@@ -91,6 +89,7 @@ export default function Career() {
               >
                 관련 기사
               </Link>
+              <br />
               <Link
                 href="https://www.yna.co.kr/view/PYH20160403092600013"
                 target="_blank"
@@ -98,6 +97,7 @@ export default function Career() {
               >
                 구글 플레이스토어 10만 다운로드
               </Link>
+              <br />
               <Link
                 href="https://www.datanet.co.kr/news/articleView.html?idxno=96477"
                 target="_blank"

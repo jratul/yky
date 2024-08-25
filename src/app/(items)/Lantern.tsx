@@ -7,13 +7,7 @@ export default function Lantern() {
         <div className="text-5xl font-bold mb-4">프로젝트</div>
         <div className="text-3xl text-violet-500 font-bold">Lantern</div>
         <div className="text-2xl text-gray-400 mb-3">2017/01 ~ 2017/06</div>
-        <iframe
-          src="https://www.youtube.com/embed/hi7Fvphwkh8"
-          title="[LANTERN] 우주최강 안드로이드 APM - LANTERN 소개영상"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          className="w-full lg:w-2/3 h-1/2"
-        ></iframe>
-        <div className="flex gap-3 items-center my-3">
+        <div className="flex gap-3 items-center my-5">
           <div className="w-12">
             <img src="/images/android.png" alt="android" />
           </div>
@@ -21,6 +15,12 @@ export default function Lantern() {
             <img src="/images/nodejs.png" alt="nodejs" />
           </div>
         </div>
+        <iframe
+          src="https://www.youtube.com/embed/hi7Fvphwkh8"
+          title="[LANTERN] 우주최강 안드로이드 APM - LANTERN 소개영상"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          className="w-full lg:w-2/3 h-1/2 my-3"
+        />
         <p>
           안드로이드 성능 측정 툴<br />
           Lantern <span className="text-violet-300">APM</span>(Application

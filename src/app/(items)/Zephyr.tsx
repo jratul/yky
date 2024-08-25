@@ -10,9 +10,6 @@ export default function Zephyr() {
           Zephyr Meetup 2024
         </div>
         <div className="text-2xl text-gray-400 mb-3">2024/08</div>
-        <div className="lg:w-2/3 mb-3">
-          <img src="/images/zephyr-screenshot.png" alt="zephyr" />
-        </div>
         <div className="flex gap-3 items-center mb-3">
           <div className="w-24">
             <img src="/images/nextjs.png" alt="nextjs" />
@@ -24,6 +21,10 @@ export default function Zephyr() {
             <img src="/images/tailwindcss.png" alt="tailwindcss" />
           </div>
         </div>
+        <div className="lg:w-2/3 mb-3">
+          <img src="/images/zephyr-screenshot.png" alt="zephyr" />
+        </div>
+
         <p>
           가상의 DB 솔루션 <span className="text-violet-300">Zephyr</span>의{" "}
           <br />

@@ -8,9 +8,6 @@ export default function Switchers() {
         <div className="text-5xl font-bold mb-4">프로젝트</div>
         <div className="text-3xl text-violet-500 font-bold">Switchers</div>
         <div className="text-2xl text-gray-400 mb-3">2024/08</div>
-        <div className="lg:w-2/3 mb-3">
-          <img src="/images/switchers-screenshot.png" alt="switchers" />
-        </div>
         <div className="flex gap-3 items-center mb-3">
           <div className="w-24">
             <img src="/images/nextjs.png" alt="nextjs" />
@@ -25,6 +22,10 @@ export default function Switchers() {
             <img src="/images/mongodb.png" alt="mongodb" />
           </div>
         </div>
+        <div className="lg:w-2/3 mb-3">
+          <img src="/images/switchers-screenshot.png" alt="switchers" />
+        </div>
+
         <p>
           닌텐도 스위치 쇼핑몰 <span className="text-violet-300">스위쳐스</span>
           입니다.

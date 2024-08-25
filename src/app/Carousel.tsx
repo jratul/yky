@@ -4,8 +4,10 @@ import { useState } from "react";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/20/solid";
 import Intro from "./(items)/Intro";
 import Career from "./(items)/Career";
+import Career2 from "./(items)/Career2";
 
-const data = [<Intro key={0} />, <Career key={1} />];
+const data = [<Intro key={0} />, <Career key={1} />, <Career2 key={2} />];
+const title = ["인트로", "이력 사항", "이력 사항"];
 
 export default function Carousel() {
   const [idx, setIdx] = useState<number>(0);

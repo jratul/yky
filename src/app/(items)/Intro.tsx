@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Intro() {
   return (
     <div className="w-screen h-screen flex-shrink-0 flex justify-center items-center">
-      <div className="w-[80vw] h-[75vh]">
+      <div className="w-[80vw] h-[85vh]">
         <p className="text-5xl lg:text-8xl">
           안녕하세요
           <br /> 웹 프론트엔드 개발자
@@ -22,7 +22,7 @@ export default function Intro() {
           <Link
             href="https://github.com/jratul"
             target="_blank"
-            className="hover:text-violet-300 hover:underline"
+            className="hover:text-violet-300 underline"
           >
             https://github.com/jratul
           </Link>
@@ -30,11 +30,11 @@ export default function Intro() {
         <div className="w-64 -ml-3">
           <img src="/images/programmers.png" alt="programmers" />
         </div>
-        <div className="flex gap-3 items-center text-2xl lg:text-5xl">
+        <div className="flex gap-3 items-center text-2xl lg:text-5xl mb-5">
           <Link
             href="https://career.programmers.co.kr/pr/jratul3_8774"
             target="_blank"
-            className="hover:text-violet-300 hover:underline text-2xl"
+            className="hover:text-violet-300 underline text-2xl"
           >
             https://career.programmers.co.kr/pr/jratul3_8774
           </Link>

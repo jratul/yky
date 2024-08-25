@@ -6,12 +6,14 @@ import Intro from "./(items)/Intro";
 import Career from "./(items)/Career";
 import Career2 from "./(items)/Career2";
 import Switchers from "./(items)/Switchers";
+import Zephyr from "./(items)/Zephyr";
 
 const data = [
   <Intro key={0} />,
   <Career key={1} />,
   <Career2 key={2} />,
   <Switchers key={3} />,
+  <Zephyr key={4} />,
 ];
 
 export default function Carousel() {

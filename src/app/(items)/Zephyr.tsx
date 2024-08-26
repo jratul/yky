@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Zephyr() {
   return (
     <div className="w-screen h-screen flex-shrink-0 flex justify-center items-center">
-      <div className="w-[70vw] lg:w-[80vw] h-[85vh]">
+      <div className="w-[70vw] lg:w-[80vw] h-[85vh] lg:pl-[20vw] lg:h-auto lg:m-auto">
         <div className="text-2xl lg:text-5xl font-bold mb-4">프로젝트</div>
         <div className="text-lg lg:text-3xl text-violet-500 font-bold">
           Zephyr Meetup 2024

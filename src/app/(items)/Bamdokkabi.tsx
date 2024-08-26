@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Bamdokkabi() {
   return (
     <div className="w-screen h-screen flex-shrink-0 flex justify-center items-center">
-      <div className="w-[70vw] lg:w-[80vw] h-[85vh]">
+      <div className="w-[70vw] lg:w-[80vw] h-[85vh] lg:pl-[20vw] lg:h-auto lg:m-auto">
         <div className="text-2xl lg:text-5xl font-bold mb-4">프로젝트</div>
         <div className="text-lg lg:text-3xl text-violet-500 font-bold">
           밤도깨비 야시장
@@ -21,13 +21,13 @@ export default function Bamdokkabi() {
           src="https://www.youtube.com/embed/PwgYwDbmkDY"
           title="밤도깨비 야시장 홈페이지"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          className="w-full lg:w-2/3 h-1/2 my-3"
+          className="w-full lg:w-2/3 lg:h-[50vh] my-3"
         />
         <p>
           밤도깨비 야시장 홍보 페이지입니다.
           <br />
-          <span className="text-violet-300">canvas</span>를 활용한 미니 게임
-          개발을 진행했습니다.
+          <span className="text-violet-300">canvas</span>를 활용한 <br />
+          미니 게임 개발을 진행했습니다.
         </p>
         <div className="flex gap-3 mt-3 items-center">
           <Link

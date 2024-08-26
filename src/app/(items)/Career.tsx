@@ -4,8 +4,8 @@ import DashedDivider from "@/components/DashedDivider";
 
 export default function Career() {
   return (
-    <div className="w-screen h-screen flex-shrink-0 flex justify-center items-center">
-      <div className="w-[70vw] lg:w-[80vw] h-[85vh]">
+    <div className="w-screen h-auto lg:h-screen flex-shrink-0 flex justify-center items-center">
+      <div className="w-[70vw] lg:w-[60vw] mt-16">
         <div className="text-2xl lg:text-5xl font-bold mb-4">이력 사항</div>
         <div className="text-lg lg:text-3xl text-violet-500 font-bold">
           삼성전자
@@ -20,7 +20,7 @@ export default function Career() {
                 EDA(회로 설계 자동화) Flow 자동화 툴 개발
               </div>
               <div className="text-sm lg:text-lg text-gray-400 mb-2">
-                2023/06 ~
+                2022/06 ~
               </div>
               <div className="flex gap-3 items-center">
                 <div className="w-12">
@@ -41,6 +41,15 @@ export default function Career() {
                 <br />
                 <span className="text-violet-300">웹 기반 네이티브 앱</span>을
                 개발했습니다.
+                <br />
+                <a
+                  href="https://mui.com/"
+                  target="_blank"
+                  className="underline hover:text-violet-300"
+                >
+                  MUI
+                </a>
+                를 사용하여 일관적인 디자인을 구성했습니다.
               </p>
             </div>
             <div className="lg:hidden">
@@ -64,7 +73,15 @@ export default function Career() {
               <p>
                 C++ GUI 프레임워크 Qt를 기반으로
                 <br />
-                회로 설계 자동화 API Open Access를 활용한
+                회로 설계 자동화 API{" "}
+                <a
+                  href="https://si2.org/openaccess-coalition/"
+                  target="_blank"
+                  className="underline hover:text-violet-300"
+                >
+                  Open Access
+                </a>
+                를 활용한
                 <br />
                 <span className="text-violet-300">반도체 회로 설계 툴</span>을
                 개발했습니다.
@@ -78,7 +95,7 @@ export default function Career() {
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-2">
           <div className="col-span-1">
-            <div className="text-sm lg:text-lg text-gray-400 mb-2">
+            <div className="text-md lg:text-2xl text-gray-400 mb-3">
               2015/06 ~ 2016/06(1년)
             </div>
             <div className="ml-2">

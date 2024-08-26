@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Lantern() {
   return (
     <div className="w-screen h-screen flex-shrink-0 flex justify-center items-center">
-      <div className="w-[70vw] lg:w-[80vw] h-[85vh]">
+      <div className="w-[70vw] lg:w-[80vw] h-[85vh] lg:pl-[20vw] lg:h-auto lg:m-auto">
         <div className="text-2xl lg:text-5xl font-bold mb-4">프로젝트</div>
         <div className="text-lg lg:text-3xl text-violet-500 font-bold">
           Lantern
@@ -23,7 +23,7 @@ export default function Lantern() {
           src="https://www.youtube.com/embed/hi7Fvphwkh8"
           title="[LANTERN] 우주최강 안드로이드 APM - LANTERN 소개영상"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          className="w-full lg:w-2/3 h-1/3 lg:h-1/2 my-3"
+          className="w-full lg:w-2/3 lg:h-[50vh] my-3"
         />
         <p>
           안드로이드 성능 측정 툴<br />

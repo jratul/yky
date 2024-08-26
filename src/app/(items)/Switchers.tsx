@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Switchers() {
   return (
     <div className="w-screen h-screen flex-shrink-0 flex justify-center items-center">
-      <div className="w-[70vw] lg:w-[80vw] h-[85vh]">
+      <div className="w-[70vw] lg:w-[80vw] h-[85vh] lg:pl-[20vw] lg:h-auto lg:m-auto">
         <div className="text-2xl lg:text-5xl font-bold mb-4">프로젝트</div>
         <div className="text-lg lg:text-3xl text-violet-500 font-bold">
           Switchers
@@ -31,6 +31,17 @@ export default function Switchers() {
         <p>
           닌텐도 스위치 쇼핑몰 <span className="text-violet-300">스위쳐스</span>
           입니다.
+          <br />
+          <a
+            href="https://next-auth.js.org/"
+            target="_blank"
+            className="underline hover:text-violet-300"
+          >
+            Next Auth
+          </a>
+          를 이용하여 <br />
+          jwt credential provider로
+          <br /> 인증 구현했습니다.
         </p>
         <div className="flex gap-3 mt-3 items-center">
           <Link

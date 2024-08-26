@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Career2() {
   return (
     <div className="w-screen h-screen flex-shrink-0 flex justify-center items-center">
-      <div className="w-[70vw] lg:w-[80vw] h-[85vh]">
+      <div className="w-[70vw] lg:w-[60vw] h-[85vh] lg:h-auto lg:m-auto">
         <div className="text-2xl lg:text-5xl font-bold mb-4">이력 사항</div>
         <div className="text-lg lg:text-3xl text-violet-500 font-bold">
           SW Maestro 7기 창업 인증
@@ -12,7 +12,7 @@ export default function Career2() {
         <div className="text-md lg:text-2xl text-gray-400 mb-3">
           2016/06 ~ 2017/08
         </div>
-        <div className="w-1/2 lg:w-1/3">
+        <div className="w-full lg:w-1/3">
           <img src="/images/swmaestro.jpg" alt="swmaestro" className="my-5" />
         </div>
         <p>
@@ -24,7 +24,7 @@ export default function Career2() {
           <br />
           선발 과정을 거쳐 최종 8팀 안에 선정되어
           <br />
-          창업 인증을 수상했습니다.
+          <span className="text-violet-300">창업 인증</span>을 수상했습니다.
         </p>
         <Link
           href="https://blog.naver.com/sw_maestro/221120923020"

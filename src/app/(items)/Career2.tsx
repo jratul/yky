@@ -4,12 +4,14 @@ import Link from "next/link";
 export default function Career2() {
   return (
     <div className="w-screen h-screen flex-shrink-0 flex justify-center items-center">
-      <div className="w-[80vw] h-[85vh]">
-        <div className="text-5xl font-bold mb-4">이력 사항</div>
-        <div className="text-3xl text-violet-500 font-bold">
+      <div className="w-[70vw] lg:w-[80vw] h-[85vh]">
+        <div className="text-2xl lg:text-5xl font-bold mb-4">이력 사항</div>
+        <div className="text-lg lg:text-3xl text-violet-500 font-bold">
           SW Maestro 7기 창업 인증
         </div>
-        <div className="text-2xl text-gray-400 mb-3">2016/06 ~ 2017/08</div>
+        <div className="text-md lg:text-2xl text-gray-400 mb-3">
+          2016/06 ~ 2017/08
+        </div>
         <div className="w-1/2 lg:w-1/3">
           <img src="/images/swmaestro.jpg" alt="swmaestro" className="my-5" />
         </div>
@@ -32,8 +34,12 @@ export default function Career2() {
           관련 내용
         </Link>
         <Divider />
-        <div className="text-3xl text-violet-500 font-bold">한양대학교</div>
-        <div className="text-2xl text-gray-400 mb-3">2016/06 ~ 2017/08</div>
+        <div className="text-lg lg:text-3xl text-violet-500 font-bold">
+          한양대학교
+        </div>
+        <div className="text-md lg:text-2xl text-gray-400 mb-3">
+          2016/06 ~ 2017/08
+        </div>
         <div>
           <span className="text-violet-300">컴퓨터 공학</span> 전공 / 학사
         </div>

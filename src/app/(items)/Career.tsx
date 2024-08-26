@@ -1,21 +1,26 @@
 import Link from "next/link";
 import Divider from "@/components/Divider";
+import DashedDivider from "@/components/DashedDivider";
 
 export default function Career() {
   return (
     <div className="w-screen h-screen flex-shrink-0 flex justify-center items-center">
-      <div className="w-[80vw] h-[85vh]">
-        <div className="text-5xl font-bold mb-4">이력 사항</div>
-        <div className="text-3xl text-violet-500 font-bold">삼성전자</div>
-        <div className="text-2xl text-gray-400 mb-3">
+      <div className="w-[70vw] lg:w-[80vw] h-[85vh]">
+        <div className="text-2xl lg:text-5xl font-bold mb-4">이력 사항</div>
+        <div className="text-lg lg:text-3xl text-violet-500 font-bold">
+          삼성전자
+        </div>
+        <div className="text-md lg:text-2xl text-gray-400 mb-3">
           2018/08 ~ 재직 중(6년)
         </div>
         <div className="ml-2">
-          <div className="grid grid-cols-2 gap-2 ">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-2 ">
             <div className="mb-1">
-              <div className="text-xl text-violet-300 font-semibold">
+              <div className="text-md lg:text-xl text-violet-300 font-semibold">
                 EDA(회로 설계 자동화) Flow 자동화 툴 개발
-                <div className="text-lg text-gray-400 mb-2">2023/06 ~</div>
+              </div>
+              <div className="text-sm lg:text-lg text-gray-400 mb-2">
+                2023/06 ~
               </div>
               <div className="flex gap-3 items-center">
                 <div className="w-12">
@@ -38,10 +43,15 @@ export default function Career() {
                 개발했습니다.
               </p>
             </div>
+            <div className="lg:hidden">
+              <DashedDivider />
+            </div>
             <div className="mb-3">
-              <div className="text-xl text-violet-300 font-semibold">
+              <div className="text-md lg:text-xl text-violet-300 font-semibold">
                 반도체 회로 설계 툴
-                <div className="text-lg text-gray-400 mb-2">2018/08 ~</div>
+              </div>
+              <div className="text-sm lg:text-lg text-gray-400 mb-2">
+                2018/08 ~
               </div>
               <div className="flex gap-3 items-center mb-3">
                 <div className="w-12">
@@ -63,16 +73,16 @@ export default function Career() {
           </div>
         </div>
         <Divider />
-        <div className="text-3xl text-violet-500 font-bold">
+        <div className="text-lg lg:text-3xl text-violet-500 font-bold">
           안드로메다 주식회사
         </div>
-        <div className="grid grid-cols-2">
+        <div className="grid grid-cols-1 lg:grid-cols-2">
           <div className="col-span-1">
-            <div className="text-2xl text-gray-400 mb-3">
+            <div className="text-sm lg:text-lg text-gray-400 mb-2">
               2015/06 ~ 2016/06(1년)
             </div>
             <div className="ml-2">
-              <div className="text-xl text-violet-300 font-semibold">
+              <div className="text-md lg:text-xl text-violet-300 font-semibold">
                 애드링 안드로이드 앱 개발
               </div>
               <div className="w-12 my-3">

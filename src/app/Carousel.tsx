@@ -32,19 +32,19 @@ export default function Carousel() {
   };
 
   return (
-    <div className="w-screen h-screen overflow-hidden">
+    <div className="w-screen h-screen lg:h-screen overflow-x-hidden lg:overflow-hidden">
       <div
         style={{ transform: `translateX(-${100 * idx}vw)` }}
         className={`w-[${
           100 * data.length
-        }vw] h-screen flex transition-transform ease-in-out duration-300`}
+        }vw] lg:h-screen flex transition-transform ease-in-out duration-300`}
       >
         {data.map((item) => item)}
       </div>
       <div className="fixed w-full top-5 left-0 text-center">
         {data.map((_, i) => (
           <span
-            className="text-3xl text-violet-500 mr-3 cursor-pointer hover:text-violet-300"
+            className="text-lg lg:text-3xl text-violet-500 mr-3 cursor-pointer hover:text-violet-300"
             key={i}
             onClick={() => {
               setIdx(i);

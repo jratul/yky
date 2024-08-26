@@ -3,12 +3,12 @@ import Link from "next/link";
 export default function Bamdokkabi() {
   return (
     <div className="w-screen h-screen flex-shrink-0 flex justify-center items-center">
-      <div className="w-[80vw] h-[85vh]">
-        <div className="text-5xl font-bold mb-4">프로젝트</div>
-        <div className="text-3xl text-violet-500 font-bold">
+      <div className="w-[70vw] lg:w-[80vw] h-[85vh]">
+        <div className="text-2xl lg:text-5xl font-bold mb-4">프로젝트</div>
+        <div className="text-lg lg:text-3xl text-violet-500 font-bold">
           밤도깨비 야시장
         </div>
-        <div className="text-2xl text-gray-400 mb-3">2018/06</div>
+        <div className="text-md lg:text-2xl text-gray-400 mb-3">2018/06</div>
         <div className="flex gap-3 items-center my-3">
           <div className="w-36">
             <img src="/images/html-js-css.png" alt="html js css" />

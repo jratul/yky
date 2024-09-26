@@ -38,7 +38,7 @@ export default function Career2() {
           한양대학교
         </div>
         <div className="text-md lg:text-2xl text-gray-400 mb-3">
-          2016/06 ~ 2017/08
+          2009/03 ~ 2018/02
         </div>
         <div>
           <span className="text-violet-300">컴퓨터 공학</span> 전공 / 학사

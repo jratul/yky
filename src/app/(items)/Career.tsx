@@ -142,7 +142,7 @@ export default function Career() {
               src="https://www.youtube.com/embed/c_4iwOAzdmo"
               title="애드링 홍보영상"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              className="my-2 w-[300px] h-[150px] lg:w-full lg:h-[300px]"
+              className="my-12 lg:my-2 w-[300px] h-[150px] lg:w-full lg:h-[300px]"
             ></iframe>
           </div>
         </div>

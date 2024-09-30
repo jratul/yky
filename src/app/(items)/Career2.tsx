@@ -13,7 +13,7 @@ export default function Career2() {
           2016/06 ~ 2017/08
         </div>
         <div className="w-full lg:w-1/3">
-          <img src="/images/swmaestro.jpg" alt="swmaestro" className="my-5" />
+          <img src="/images/swmaestro.webp" alt="swmaestro" className="my-5" />
         </div>
         <p>
           SW 인재 육성 정부 지원 사업인

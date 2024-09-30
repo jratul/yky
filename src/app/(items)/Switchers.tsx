@@ -25,7 +25,7 @@ export default function Switchers() {
           </div>
         </div>
         <div className="lg:w-2/3 mb-3">
-          <img src="/images/switchers-screenshot.png" alt="switchers" />
+          <img src="/images/switchers-screenshot.webp" alt="switchers" />
         </div>
 
         <p>

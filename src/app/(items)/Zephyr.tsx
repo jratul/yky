@@ -22,7 +22,7 @@ export default function Zephyr() {
           </div>
         </div>
         <div className="lg:w-2/3 mb-3">
-          <img src="/images/zephyr-screenshot.png" alt="zephyr" />
+          <img src="/images/zephyr-screenshot.webp" alt="zephyr" />
         </div>
 
         <p>

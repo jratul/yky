@@ -9,7 +9,7 @@ export default function Teeniepingle() {
         <div className="text-lg lg:text-3xl text-violet-500 font-bold">
           티니핑글
         </div>
-        <div className="text-md lg:text-2xl text-gray-400 mb-3">2024/08</div>
+        <div className="text-md lg:text-2xl text-gray-400 mb-3">2024/09</div>
         <div className="flex gap-3 items-center mb-3">
           <div className="w-24">
             <img src="/images/nextjs.png" alt="nextjs" />

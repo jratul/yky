@@ -9,15 +9,17 @@ import Switchers from "./(items)/Switchers";
 import Zephyr from "./(items)/Zephyr";
 import Bamdokkabi from "./(items)/Bamdokkabi";
 import Lantern from "./(items)/Lantern";
+import Teeniepingle from "./(items)/Teeniepingle";
 
 const data = [
   <Intro key={0} />,
   <Career key={1} />,
   <Career2 key={2} />,
   <Switchers key={3} />,
-  <Zephyr key={4} />,
-  <Bamdokkabi key={5} />,
-  <Lantern key={6} />,
+  <Teeniepingle key={4} />,
+  <Zephyr key={5} />,
+  <Bamdokkabi key={6} />,
+  <Lantern key={7} />,
 ];
 
 export default function Carousel() {
@@ -44,7 +46,7 @@ export default function Carousel() {
       <div className="fixed w-full top-5 left-0 text-center">
         {data.map((_, i) => (
           <span
-            className="text-lg lg:text-3xl text-violet-500 mr-3 cursor-pointer hover:text-violet-300"
+            className="text-lg lg:text-3xl text-violet-500 mr-1 lg:mr-3 cursor-pointer hover:text-violet-300"
             key={i}
             onClick={() => {
               setIdx(i);

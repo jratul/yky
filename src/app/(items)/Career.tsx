@@ -137,7 +137,7 @@ export default function Career() {
               </Link>
             </div>
           </div>
-          <div className="col-span-1 my-12 lg:my-2 ">
+          <div className="col-span-1 mb-12 lg:my-2 lg:mb-2 ">
             <iframe
               src="https://www.youtube.com/embed/c_4iwOAzdmo"
               title="애드링 홍보영상"

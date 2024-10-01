@@ -17,7 +17,7 @@ export default function Teeniepingle() {
           <div className="w-12">
             <img src="/images/typescript.png" alt="typescript" />
           </div>
-          <div className="w-12">
+          <div className="w-24">
             <img src="/images/emotion.webp" alt="emotion" />
           </div>
         </div>

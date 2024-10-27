@@ -1,7 +1,10 @@
 "use client";
 
-import { useState } from "react";
-import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/20/solid";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 import Intro from "./(items)/Intro";
 import Career from "./(items)/Career";
 import Career2 from "./(items)/Career2";
@@ -23,47 +26,19 @@ const data = [
 ];
 
 export default function Carousel() {
-  const [idx, setIdx] = useState<number>(0);
-
-  const handleLeft = () => {
-    setIdx(idx - 1 < 0 ? data.length - 1 : idx - 1);
-  };
-
-  const handleRight = () => {
-    setIdx(idx + 1 > data.length - 1 ? 0 : idx + 1);
-  };
-
   return (
     <div className="w-screen h-screen lg:h-screen overflow-x-hidden lg:overflow-hidden">
-      <div
-        style={{ transform: `translateX(-${100 * idx}vw)` }}
-        className={`w-[${
-          100 * data.length
-        }vw] lg:h-screen flex transition-transform ease-in-out duration-300`}
+      <Swiper
+        slidesPerView={1}
+        modules={[Navigation, Pagination]}
+        loop
+        navigation
+        pagination={{ clickable: true }}
       >
-        {data.map((item) => item)}
-      </div>
-      <div className="fixed w-full top-5 left-0 text-center">
-        {data.map((_, i) => (
-          <span
-            className="text-lg lg:text-3xl text-violet-500 mr-1 lg:mr-3 cursor-pointer hover:text-violet-300"
-            key={i}
-            onClick={() => {
-              setIdx(i);
-            }}
-          >
-            {i === idx ? <span>●</span> : <span>○</span>}
-          </span>
+        {data.map((item, idx) => (
+          <SwiperSlide key={idx}>{item}</SwiperSlide>
         ))}
-      </div>
-      <ChevronLeftIcon
-        className="w-20 h-20 absolute text-5xl font-bold left-2 top-[50vh] cursor-pointer hover:text-violet-300"
-        onClick={handleLeft}
-      />
-      <ChevronRightIcon
-        className="w-20 h-20 absolute text-5xl font-bold right-2 top-[50vh] cursor-pointer hover:text-violet-300"
-        onClick={handleRight}
-      />
+      </Swiper>
     </div>
   );
 }

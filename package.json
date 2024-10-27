@@ -10,10 +10,11 @@
   },
   "dependencies": {
     "@heroicons/react": "^2.1.5",
-    "next": "14.2.6",
+    "next": "^14.2.16",
     "react": "^18",
     "react-dom": "^18",
-    "react-starfield": "^1.0.3"
+    "react-starfield": "^1.0.3",
+    "swiper": "^11.1.14"
   },
   "devDependencies": {
     "@types/node": "^20",

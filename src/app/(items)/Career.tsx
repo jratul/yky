@@ -147,6 +147,7 @@ export default function Career() {
           </div>
         </div>
       </div>
+      <div className="w-100vw h-36"></div>
     </div>
   );
 }

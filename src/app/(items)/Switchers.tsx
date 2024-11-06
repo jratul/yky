@@ -43,8 +43,10 @@ export default function Switchers() {
           jwt credential provider로
           <br /> 인증 구현했습니다.
           <br />
-          Next JS 14버전의 App Router 구조를 사용했고, <br />
-          Route Handler로 API 구성했습니다.
+          Next JS 14버전의 <span className="text-violet-300">App Router</span>
+          구조를 사용했고, <br />
+          <span className="text-violet-300">Route Handler</span>로 API
+          구성했습니다.
         </p>
         <div className="flex gap-3 mt-3 items-center">
           <Link

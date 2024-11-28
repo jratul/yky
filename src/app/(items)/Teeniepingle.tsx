@@ -22,7 +22,7 @@ export default function Teeniepingle() {
           </div>
         </div>
         <div className="lg:w-2/3 mb-3">
-          <img src="/images/teeniepingle-screenshot.webp" alt="switchers" />
+          <img src="/images/teeniepingle-screenshot.webp" alt="teeniepingle" />
         </div>
 
         <p>당신의 티니핑을 찾아보세요</p>

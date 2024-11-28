@@ -13,16 +13,18 @@ import Zephyr from "./(items)/Zephyr";
 import Bamdokkabi from "./(items)/Bamdokkabi";
 import Lantern from "./(items)/Lantern";
 import Teeniepingle from "./(items)/Teeniepingle";
+import Aldente from "./(items)/Aldente";
 
 const data = [
-  <Intro key={0} />,
-  <Career key={1} />,
-  <Career2 key={2} />,
-  <Switchers key={3} />,
-  <Teeniepingle key={4} />,
-  <Zephyr key={5} />,
-  <Bamdokkabi key={6} />,
-  <Lantern key={7} />,
+  <Intro />,
+  <Career />,
+  <Career2 />,
+  <Aldente />,
+  <Switchers />,
+  <Teeniepingle />,
+  <Zephyr />,
+  <Bamdokkabi />,
+  <Lantern />,
 ];
 
 export default function Carousel() {

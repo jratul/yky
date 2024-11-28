@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import Background from "@components/Background";
 
 export const metadata: Metadata = {
   title: "Keonyeol Yu",
@@ -21,8 +22,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ko" className={`${pretendard.variable}`}>
-      <body className={"font-pretendard tracking-tight text-white"}>
-        {children}
+      <body className={"font-pretendard tracking-tighter"}>
+        <Background>
+          <div className="max-w-3xl mx-auto">{children}</div>
+        </Background>
       </body>
     </html>
   );

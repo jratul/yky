@@ -4,9 +4,11 @@ import { motion } from "motion/react";
 export default function Motion({
   children,
   className,
+  delay = 0,
 }: {
   children: React.ReactNode;
   className?: string;
+  delay?: number;
 }) {
   return (
     <motion.div
@@ -16,6 +18,7 @@ export default function Motion({
       transition={{
         duration: 0.5,
         ease: "easeIn",
+        delay,
       }}
       className={className}
     >

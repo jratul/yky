@@ -14,6 +14,8 @@ import CSS3Badge from "@components/badge/CSS3Badge";
 import JQueryBadge from "@components/badge/JQueryBadge";
 import AndroidBadge from "@components/badge/AndroidBadge";
 import NodeJSBadge from "@components/badge/NodeJSBadge";
+import AmazonS3Badge from "@components/badge/AmazonS3Badge";
+import ImageSwiper from "@components/ImageSwiper";
 
 export const projects: Project[] = [
   {
@@ -25,14 +27,16 @@ export const projects: Project[] = [
       <ReactQueryBadge key="react-query" />,
       <TailwindcssBadge key="tailwindcss" />,
       <FirebaseBadge key="firebase" />,
+      <AmazonS3Badge key="amazon-s3" />,
     ],
     hero: (
-      <Image
-        src="/images/aldente-screenshot.webp"
-        alt="aldente"
-        width={800}
-        height={800}
-        priority
+      <ImageSwiper
+        images={[
+          "/images/aldente1.webp",
+          "/images/aldente2.webp",
+          "/images/aldente3.webp",
+          "/images/aldente4.webp",
+        ]}
       />
     ),
     desc: (
@@ -56,14 +60,16 @@ export const projects: Project[] = [
       <TypescriptBadge key="typescript" />,
       <TailwindcssBadge key="tailwindcss" />,
       <MongoDBBadge key="mongo-db" />,
+      <AmazonS3Badge key="amazon-s3" />,
     ],
     hero: (
-      <Image
-        src="/images/switchers-screenshot.webp"
-        alt="switchers"
-        width={800}
-        height={800}
-        priority
+      <ImageSwiper
+        images={[
+          "/images/switchers1.webp",
+          "/images/switchers2.webp",
+          "/images/switchers3.webp",
+          "/images/switchers4.webp",
+        ]}
       />
     ),
     desc: (
@@ -86,12 +92,8 @@ export const projects: Project[] = [
       <StyledComponentsBadge key="style-components" />,
     ],
     hero: (
-      <Image
-        src="/images/teeniepingle-screenshot.webp"
-        alt="teeniepingle"
-        width={800}
-        height={800}
-        priority
+      <ImageSwiper
+        images={["/images/teeniepingle1.webp", "/images/teeniepingle2.webp"]}
       />
     ),
     desc: <>당신의 티니핑을 찾아 보세요</>,
@@ -107,12 +109,13 @@ export const projects: Project[] = [
       <TailwindcssBadge key="tailwindcss" />,
     ],
     hero: (
-      <Image
-        src="/images/zephyr-screenshot.webp"
-        alt="zephyr"
-        width={800}
-        height={800}
-        priority
+      <ImageSwiper
+        images={[
+          "/images/zephyr1.webp",
+          "/images/zephyr2.webp",
+          "/images/zephyr3.webp",
+          "/images/zephyr4.webp",
+        ]}
       />
     ),
     desc: <>가상의 DB 솔루션 Zephyr의 컨퍼런스 랜딩 페이지</>,

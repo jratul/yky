@@ -22,6 +22,7 @@ img {
 
 .swiper .swiper-slide {
   height: auto;
+  background-color: white;
 }
 
 .swiper-button-prev,
@@ -30,13 +31,14 @@ img {
 .swiper-button-next:after {
   font-weight: bold;
   font-size: 24px !important;
+  color: #93c5fd;
   @media (max-width: 768px) {
     font-size: 20px !important;
   }
 }
 
 .swiper-pagination-bullet {
-  background-color: #3b82f6 !important;
+  background-color: #93c5fd !important;
 }
 
 .swiper-pagination {

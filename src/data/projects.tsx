@@ -16,6 +16,7 @@ import AndroidBadge from "@components/badge/AndroidBadge";
 import NodeJSBadge from "@components/badge/NodeJSBadge";
 import AmazonS3Badge from "@components/badge/AmazonS3Badge";
 import ImageSwiper from "@components/ImageSwiper";
+import JavaBadge from "@components/badge/JavaBadge";
 
 export const projects: Project[] = [
   {
@@ -150,7 +151,11 @@ export const projects: Project[] = [
   {
     title: "Lantern",
     period: "2017/01 ~ 2017/06",
-    stacks: [<AndroidBadge key="android" />, <NodeJSBadge key="nodejs" />],
+    stacks: [
+      <AndroidBadge key="android" />,
+      <JavaBadge key="java" />,
+      <NodeJSBadge key="nodejs" />,
+    ],
     hero: (
       <iframe
         src="https://www.youtube.com/embed/hi7Fvphwkh8"
@@ -166,6 +171,6 @@ export const projects: Project[] = [
         <li>Node.js 백엔드 api 개발</li>
       </ul>
     ),
-    github: "https://github.com/bam-dokkabi",
+    github: "https://github.com/TeamThresh",
   },
 ];

@@ -5,7 +5,6 @@ import NextJSBadge from "@components/badge/NextJSBadge";
 import ReactQueryBadge from "@components/badge/ReactQueryBadge";
 import TailwindcssBadge from "@components/badge/TailwindcssBadge";
 import TypescriptBadge from "@components/badge/TypescriptBadge";
-import Image from "next/image";
 import MongoDBBadge from "@components/badge/MongoDBBadge";
 import StyledComponentsBadge from "@components/badge/StyledComponentsBadge";
 import HTML5Badge from "@components/badge/HTML5Badge";
@@ -169,6 +168,10 @@ export const projects: Project[] = [
         <li>Android 성능 측정 툴(Application Performance Management)</li>
         <li>Android SDK 개발</li>
         <li>Node.js 백엔드 api 개발</li>
+        <li>
+          Android App의 CPU 및 메모리 사용량 Dump 정보와 Activity 진입 기록을
+          통해 사용자 흐름을 확인하는 인사이트를 제공했습니다.
+        </li>
       </ul>
     ),
     github: "https://github.com/TeamThresh",

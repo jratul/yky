@@ -47,13 +47,9 @@ export default function Work() {
                 </li>
                 <li>AG Grid를 연동하여 10,000개에 달하는 Node의 Tree 구현</li>
                 <li>
-                  Apexchart로 전체 flow를 한 눈에 파악할 수 있는 대시보드 개발
-                </li>
-                <li>
                   Jira를 통한 issue 관리, Bitbucket을 통한 형상 관리 및 코드
                   리뷰
                 </li>
-                <li>k8s를 통해 nginx pod 배포 진행</li>
               </ul>
             }
           />,

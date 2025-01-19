@@ -83,14 +83,6 @@ export default function Work() {
         job=""
         workProjects={[
           <div key="sw-maestro" className="p-2">
-            <Image
-              src="/images/swmaestro.webp"
-              alt="sw-maestro"
-              width={700}
-              height={400}
-              className="my-2 rounded w-full"
-              priority
-            />
             SW 인재 육성 정부 지원 사업
             <br />
             <HighSpan>SW Maestro 7기</HighSpan> 연수생 활동

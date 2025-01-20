@@ -19,7 +19,7 @@ export default function ImageSwiper({ images }: Props) {
       loop
       navigation
       pagination={{ clickable: true }}
-      className="h-[400px] lg-h-[600px]"
+      className="h-[400px] lg:h-[600px]"
     >
       {images.map((img, idx) => (
         <SwiperSlide key={idx} className="flex justify-center items-center">

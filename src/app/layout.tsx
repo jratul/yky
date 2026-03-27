@@ -1,19 +1,24 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
+import { Manrope, Inter } from "next/font/google";
 import "./globals.css";
 import Background from "@components/Background";
 import Nav from "@components/Nav";
 
 export const metadata: Metadata = {
   title: "Keonyeol Yu",
-  description: "Portfolio",
+  description: "Web Frontend Developer",
 };
 
-const pretendard = localFont({
-  src: "./fonts/PretendardVariable.ttf",
+const manrope = Manrope({
+  subsets: ["latin"],
+  variable: "--font-manrope",
   display: "swap",
-  weight: "45 920",
-  variable: "--font-pretendard",
+});
+
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+  display: "swap",
 });
 
 export default function RootLayout({
@@ -22,11 +27,19 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ko" className={`${pretendard.variable}`}>
-      <body className={"font-pretendard tracking-tighter"}>
+    <html lang="ko" className={`${manrope.variable} ${inter.variable}`}>
+      <head>
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+        />
+      </head>
+      <body className="font-body bg-surface text-on-surface">
         <Background>
           <Nav />
-          <div className="max-w-3xl mx-auto">{children}</div>
+          <main className="max-w-7xl mx-auto px-6 pt-24 pb-32">
+            {children}
+          </main>
         </Background>
       </body>
     </html>

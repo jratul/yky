@@ -19,6 +19,28 @@ import JavaBadge from "@components/badge/JavaBadge";
 
 export const projects: Project[] = [
   {
+    title: "텅장수선소",
+    period: "2026/02",
+    stacks: [
+      <NextJSBadge key="nextjs" />,
+      <TypescriptBadge key="typescript" />,
+      <TailwindcssBadge key="tailwindcss" />,
+    ],
+    hero: (
+      <ImageSwiper images={["/images/tjsss1.webp"]} />
+    ),
+    desc: (
+      <ul className="ml-4 list-disc">
+        <li>돈, 절약 관련 포스트를 올리는 SEO 최적화 블로그</li>
+        <li>Next.js App Router + Markdown 기반 콘텐츠 관리</li>
+        <li>sitemap.xml, robots.txt, OG 태그 등 SEO 최적화</li>
+        <li>shadcn/ui 컴포넌트 활용</li>
+      </ul>
+    ),
+    github: "https://github.com/jratul/tjsss",
+    link: "https://tjsss.vercel.app",
+  },
+  {
     title: "Aldente",
     period: "2024/11",
     stacks: [

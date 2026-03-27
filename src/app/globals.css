@@ -3,8 +3,11 @@
 @import "tailwindcss/utilities";
 
 html {
-  width: calc(100vw - 8px);
   overflow-x: hidden;
+}
+
+body {
+  background-color: #faf8ff;
 }
 
 img {
@@ -20,9 +23,14 @@ img {
   outline: none;
 }
 
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
+/* Swiper */
 .swiper .swiper-slide {
   height: auto;
-  background-color: white;
+  background-color: #faf8ff;
 }
 
 .swiper-button-prev,
@@ -30,15 +38,12 @@ img {
 .swiper-button-prev:after,
 .swiper-button-next:after {
   font-weight: bold;
-  font-size: 24px !important;
-  color: #93c5fd;
-  @media (max-width: 768px) {
-    font-size: 20px !important;
-  }
+  font-size: 20px !important;
+  color: #003ec7;
 }
 
 .swiper-pagination-bullet {
-  background-color: #93c5fd !important;
+  background-color: #003ec7 !important;
 }
 
 .swiper-pagination {

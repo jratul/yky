@@ -1,45 +1,44 @@
-import { EnvelopeIcon } from "@heroicons/react/20/solid";
-import Intro from "@components/Intro";
 import Motion from "@components/Motion";
 import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="mt-4">
-      <Intro />
-      <Motion
-        delay={0.2}
-        className="flex justify-center items-center gap-3 my-1 text-md md:text-lg"
-      >
-        <EnvelopeIcon className="w-5 h-5" /> jratul3@gmail.com
+    <section className="py-16">
+      <Motion>
+        <span className="inline-block px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container text-xs font-label font-semibold uppercase tracking-widest mb-6">
+          Web Frontend Developer
+        </span>
       </Motion>
-      <Motion
-        delay={0.3}
-        className="flex justify-center items-center gap-3 my-1 text-md md:text-lg"
-      >
-        <img className="w-5 h-5" src="/images/github.png" alt="github" />
-        <Link
-          href="https://github.com/jratul"
-          target="_blank"
-          className="underline"
-        >
-          https://github.com/jratul
-        </Link>
+
+      <Motion delay={0.1}>
+        <h1 className="font-headline font-extrabold text-6xl md:text-8xl tracking-tighter text-on-surface leading-[1.05] mb-6">
+          유건열
+          <br />
+          <span className="text-primary">Keonyeol Yu.</span>
+        </h1>
       </Motion>
-      <Motion delay={0.6} className="flex flex-col items-center mt-4">
-        <img
-          className="h-8"
-          src="/images/programmers-logo-dark.png"
-          alt="programmers"
-        />
-        <Link
-          href="https://career.programmers.co.kr/pr/jratul3_8774"
-          target="_blank"
-          className="underline"
-        >
-          https://career.programmers.co.kr/pr/jratul3_8774
-        </Link>
+
+      <Motion delay={0.2}>
+        <div className="flex flex-col sm:flex-row gap-4 text-sm font-label font-semibold">
+          <a
+            href="mailto:jratul3@gmail.com"
+            className="flex items-center gap-2 text-secondary hover:text-primary transition-colors duration-200"
+          >
+            <span className="material-symbols-outlined text-base">mail</span>
+            jratul3@gmail.com
+          </a>
+          <Link
+            href="https://github.com/jratul"
+            target="_blank"
+            className="flex items-center gap-2 text-secondary hover:text-primary transition-colors duration-200"
+          >
+            <span className="material-symbols-outlined text-base">
+              code_blocks
+            </span>
+            github.com/jratul
+          </Link>
+        </div>
       </Motion>
-    </div>
+    </section>
   );
 }

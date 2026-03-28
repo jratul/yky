@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { LinkIcon } from "@heroicons/react/20/solid";
 import Motion from "@components/Motion";
@@ -17,7 +18,7 @@ export default function ProjectItem({ project }: Props) {
       <div className="flex justify-start items-center gap-2">
         {project.github && (
           <Link href={project.github} target="_blank">
-            <img src="/images/github.png" alt="github" className="w-10 h-10" />
+            <Image src="/images/github.png" alt="github" width={40} height={40} />
           </Link>
         )}
         {project.link && (

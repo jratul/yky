@@ -4,21 +4,17 @@ import Link from "next/link";
 export default function Home() {
   return (
     <section className="py-16">
-      <Motion>
-        <span className="inline-block px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container text-xs font-label font-semibold uppercase tracking-widest mb-6">
-          Web Frontend Developer
-        </span>
-      </Motion>
+      <span className="inline-block px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container text-xs font-label font-semibold uppercase tracking-widest mb-6">
+        Web Frontend Developer
+      </span>
+
+      <h1 className="font-headline font-extrabold text-6xl md:text-8xl tracking-tighter text-on-surface leading-[1.05] mb-6">
+        유건열
+        <br />
+        <span className="text-primary">Keonyeol Yu.</span>
+      </h1>
 
       <Motion delay={0.1}>
-        <h1 className="font-headline font-extrabold text-6xl md:text-8xl tracking-tighter text-on-surface leading-[1.05] mb-6">
-          유건열
-          <br />
-          <span className="text-primary">Keonyeol Yu.</span>
-        </h1>
-      </Motion>
-
-      <Motion delay={0.2}>
         <div className="flex flex-col sm:flex-row gap-4 text-sm font-label font-semibold">
           <a
             href="mailto:jratul3@gmail.com"

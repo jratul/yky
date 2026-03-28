@@ -1,6 +1,3 @@
-"use client";
-import { motion } from "motion/react";
-
 export default function Motion({
   children,
   className,
@@ -11,18 +8,13 @@ export default function Motion({
   delay?: number;
 }) {
   return (
-    <motion.div
-      initial={{ opacity: 0, translateY: -10 }}
-      whileInView={{ opacity: 1, translateY: 0 }}
-      viewport={{ once: true }}
-      transition={{
-        duration: 0.5,
-        ease: "easeIn",
-        delay,
-      }}
+    <div
       className={className}
+      style={{
+        animation: `fadeInUp 0.5s ease-in ${delay}s both`,
+      }}
     >
       {children}
-    </motion.div>
+    </div>
   );
 }

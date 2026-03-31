@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Manrope, Inter } from "next/font/google";
-import Script from "next/script";
 import "./globals.css";
 import Background from "@components/Background";
 import Nav from "@components/Nav";
@@ -13,13 +12,13 @@ export const metadata: Metadata = {
 const manrope = Manrope({
   subsets: ["latin"],
   variable: "--font-manrope",
-  display: "optional",
+  display: "swap",
 });
 
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
-  display: "optional",
+  display: "swap",
 });
 
 export default function RootLayout({
@@ -29,6 +28,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ko" className={`${manrope.variable} ${inter.variable}`}>
+      <head>
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=block"
+        />
+      </head>
       <body className="font-body bg-surface text-on-surface">
         <Background>
           <Nav />
@@ -36,19 +41,6 @@ export default function RootLayout({
             {children}
           </main>
         </Background>
-        <Script
-          id="material-symbols"
-          strategy="afterInteractive"
-          dangerouslySetInnerHTML={{
-            __html: `
-              const l = document.createElement('link');
-              l.rel = 'stylesheet';
-              l.href = 'https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=block';
-              l.onload = () => document.documentElement.classList.add('fonts-loaded');
-              document.head.appendChild(l);
-            `,
-          }}
-        />
       </body>
     </html>
   );

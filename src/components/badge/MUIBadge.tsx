@@ -5,8 +5,9 @@ export default function MUIBadge() {
     <Image
       src="https://img.shields.io/badge/MUI-%230081CB.svg?style=for-the-badge&logo=mui&logoColor=white"
       alt="mui"
-      width={160}
+      width={200}
       height={28}
+      style={{ width: "auto" }}
       unoptimized
     />
   );

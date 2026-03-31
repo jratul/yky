@@ -5,8 +5,9 @@ export default function StyledComponentsBadge() {
     <Image
       src="https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white"
       alt="styled-components"
-      width={160}
+      width={200}
       height={28}
+      style={{ width: "auto" }}
       unoptimized
     />
   );

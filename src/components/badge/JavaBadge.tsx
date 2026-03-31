@@ -5,8 +5,9 @@ export default function JavaBadge() {
     <Image
       src="https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white"
       alt="java"
-      width={160}
+      width={200}
       height={28}
+      style={{ width: "auto" }}
       unoptimized
     />
   );

@@ -5,8 +5,9 @@ export default function MongoDBBadge() {
     <Image
       src="https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white"
       alt="mongo-db"
-      width={160}
+      width={200}
       height={28}
+      style={{ width: "auto" }}
       unoptimized
     />
   );

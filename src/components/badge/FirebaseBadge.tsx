@@ -5,8 +5,9 @@ export default function FirebaseBadge() {
     <Image
       src="https://img.shields.io/badge/firebase-a08021?style=for-the-badge&logo=firebase&logoColor=ffcd34"
       alt="firebase"
-      width={160}
+      width={200}
       height={28}
+      style={{ width: "auto" }}
       unoptimized
     />
   );

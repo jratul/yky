@@ -20,6 +20,8 @@ export interface Experience {
   points?: string[];
   tags?: string[];
   links?: Link[];
+  youtube?: string;
+  image?: string;
 }
 
 export interface Project {
@@ -38,8 +40,6 @@ export const profile = {
   nameKo: "유건열",
   nameEn: "Keonyeol Yu",
   role: "Web Frontend Developer",
-  intro:
-    "6년간 삼성전자에서 대규모 사내 개발 도구를 만들었고, 지금은 쿠팡에서 프론트엔드를 개발합니다. React와 Next.js로 복잡한 화면을 단단하게 구현하는 일을 좋아합니다.",
   email: "jratul3@gmail.com",
   github: "https://github.com/jratul",
   githubLabel: "github.com/jratul",
@@ -97,6 +97,7 @@ export const experiences: Experience[] = [
     description:
       "통화 시 광고를 듣고 리워드를 적립받는 앱 '애드링' 개발 · Google Play 10만+ 다운로드, 4억 투자 유치",
     tags: ["Android"],
+    youtube: "c_4iwOAzdmo",
   },
   {
     company: "한양대학교",
@@ -179,6 +180,7 @@ export const projects: Project[] = [
     ],
     tags: ["HTML5", "JavaScript", "jQuery"],
     github: "https://github.com/bam-dokkabi",
+    image: "/projects/bamdokkabi.jpg",
   },
   {
     slug: "lantern",
@@ -191,5 +193,6 @@ export const projects: Project[] = [
     ],
     tags: ["Android", "Java", "Node.js"],
     github: "https://github.com/TeamThresh",
+    image: "/projects/lantern.jpg",
   },
 ];

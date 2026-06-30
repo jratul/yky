@@ -22,10 +22,7 @@ export function Hero() {
         <Reveal as="p" delay={140} className="mt-3.5 font-mono text-[clamp(1rem,2.2vw,1.5rem)] tracking-[0.02em] text-neutral-500">
           {profile.nameEn}
         </Reveal>
-        <Reveal as="p" delay={220} className="mt-8 max-w-[640px] text-[clamp(1.08rem,2.3vw,1.5rem)] leading-[1.62] text-neutral-300 [text-wrap:pretty]">
-          {profile.intro}
-        </Reveal>
-        <Reveal delay={300} className="mt-10 flex flex-wrap gap-3">
+        <Reveal delay={220} className="mt-10 flex flex-wrap gap-3">
           <a
             href={`mailto:${profile.email}`}
             className="inline-flex items-center gap-2 rounded-[10px] border border-accent/45 bg-accent/[16%] px-[22px] py-[13px] text-[15px] font-medium text-neutral-200 transition hover:-translate-y-0.5 hover:bg-accent/[26%]"

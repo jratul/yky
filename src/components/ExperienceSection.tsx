@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { experiences, type Experience } from "@data/portfolio";
 import { Reveal } from "./Reveal";
 import { SectionHeader, Tag } from "./ui";
@@ -73,6 +74,30 @@ function ExperienceItem({ exp }: { exp: Experience }) {
               </div>
             </div>
           ))}
+        </div>
+      )}
+
+      {exp.image && (
+        <div className="mt-4 overflow-hidden rounded-xl border border-white/[7%]">
+          <Image
+            src={exp.image}
+            alt={`${exp.company} 사진`}
+            width={640}
+            height={360}
+            className="w-full object-cover"
+          />
+        </div>
+      )}
+
+      {exp.youtube && (
+        <div className="mt-4 overflow-hidden rounded-xl border border-white/[7%]">
+          <iframe
+            src={`https://www.youtube.com/embed/${exp.youtube}`}
+            title={`${exp.company} 영상`}
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+            className="aspect-video w-full"
+          />
         </div>
       )}
 

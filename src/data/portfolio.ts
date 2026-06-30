@@ -108,6 +108,32 @@ export const experiences: Experience[] = [
 
 export const projects: Project[] = [
   {
+    slug: "dowsing-dex",
+    title: "다우징덱스",
+    date: "2026.06",
+    points: [
+      "포켓몬 도감 · 타입 상성표 · 골드 스토리 공략 웹앱",
+      "pokeapi.co 데이터 빌드타임 pre-fetch로 정적 생성",
+      "React Router v7 기반 다중 페이지 구성",
+    ],
+    tags: ["React", "TypeScript", "Tailwind"],
+    github: "https://github.com/jratul/dowsing-dex",
+    live: "https://dowsing-dex.vercel.app",
+  },
+  {
+    slug: "mokiru",
+    title: "모키루",
+    date: "2026.04",
+    points: [
+      "수학·과학 마크다운 기반 학습 사이트",
+      "KaTeX 수식 · Mafs 인터랙티브 그래프 · Mermaid 다이어그램 렌더링",
+      "Fuse.js 클라이언트 사이드 퍼지 검색",
+    ],
+    tags: ["React", "TypeScript", "Tailwind"],
+    github: "https://github.com/jratul/mokiru",
+    live: "https://mokiru.vercel.app",
+  },
+  {
     slug: "tjsss",
     title: "텅장수선소",
     date: "2026.02",

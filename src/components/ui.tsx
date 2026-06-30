@@ -6,7 +6,6 @@ const TECH_COLORS: Record<string, { bg: string; fg: string }> = {
   "TypeScript":        { bg: "rgba(49,120,198,.15)",  fg: "#60a5fa" },
   "JavaScript":        { bg: "rgba(247,223,30,.11)",  fg: "#eab308" },
   "Tailwind":          { bg: "rgba(6,182,212,.12)",   fg: "#22d3ee" },
-  "Tailwind CSS":      { bg: "rgba(6,182,212,.12)",   fg: "#22d3ee" },
   "shadcn/ui":         { bg: "rgba(255,255,255,.08)", fg: "#e2e8f0" },
   "React Query":       { bg: "rgba(255,65,84,.12)",   fg: "#ff6b7a" },
   "Firebase":          { bg: "rgba(255,196,0,.11)",   fg: "#fbbf24" },

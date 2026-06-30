@@ -52,6 +52,14 @@ function ExperienceItem({ exp }: { exp: Experience }) {
         </ul>
       )}
 
+      {exp.tags && (
+        <div className="mt-4 flex flex-wrap gap-2">
+          {exp.tags.map((t) => (
+            <Tag key={t}>{t}</Tag>
+          ))}
+        </div>
+      )}
+
       {exp.subProjects && (
         <div className="mt-[22px] flex flex-col gap-[22px]">
           {exp.subProjects.map((sp) => (
@@ -98,14 +106,6 @@ function ExperienceItem({ exp }: { exp: Experience }) {
             allowFullScreen
             className="aspect-video w-full"
           />
-        </div>
-      )}
-
-      {exp.tags && (
-        <div className="mt-4 flex flex-wrap gap-2">
-          {exp.tags.map((t) => (
-            <Tag key={t}>{t}</Tag>
-          ))}
         </div>
       )}
     </Reveal>

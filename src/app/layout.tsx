@@ -18,14 +18,14 @@ export const metadata: Metadata = {
 const pretendard = localFont({
   src: "./fonts/PretendardVariable.ttf",
   variable: "--font-pretendard",
-  display: "swap",
+  display: "optional",
 });
 
 const jetbrainsMono = JetBrains_Mono({
   subsets: ["latin"],
   weight: ["400", "500", "700"],
   variable: "--font-jetbrains",
-  display: "swap",
+  display: "optional",
 });
 
 export default function RootLayout({

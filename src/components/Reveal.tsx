@@ -44,8 +44,8 @@ export function Reveal({
   return (
     <Tag
       ref={ref}
-      style={{ transitionDelay: `${delay}ms` }}
-      className={`transition-all duration-700 ease-[cubic-bezier(.16,1,.3,1)] ${
+      style={delay > 0 ? { transitionDelay: `${delay}ms` } : undefined}
+      className={`transition-[opacity,transform] duration-700 ease-[cubic-bezier(.16,1,.3,1)] ${
         shown ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
       } ${className}`}
     >

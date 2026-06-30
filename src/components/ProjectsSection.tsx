@@ -40,7 +40,7 @@ function ProjectCard({ project }: { project: Project }) {
           <p className="text-sm leading-[1.7] text-neutral-300">{project.description}</p>
         )}
 
-        <div className="mt-auto flex flex-wrap gap-[7px]">
+        <div className="mt-auto flex flex-wrap gap-2">
           {project.tags.map((t) => (
             <Tag key={t}>{t}</Tag>
           ))}

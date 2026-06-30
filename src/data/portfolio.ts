@@ -51,7 +51,7 @@ export const experiences: Experience[] = [
     period: "2025.02 — 현재",
     role: "프론트엔드 개발자",
     current: true,
-    tags: ["React", "Next.js", "Tailwind CSS"],
+    tags: ["React", "Next.js", "Tailwind"],
   },
   {
     company: "삼성전자",

@@ -5,7 +5,7 @@ const NAV = [
 
 export function Header() {
   return (
-    <header className="fixed inset-x-0 top-0 z-50 flex items-center justify-between gap-4 px-[clamp(20px,5vw,80px)] py-3.75 backdrop-blur-xl bg-[#0a0a0c]/55 border-b border-white/6">
+    <header className="fixed inset-x-0 top-0 z-50 flex items-center justify-between gap-4 px-[clamp(20px,5vw,80px)] py-4 backdrop-blur-xl bg-[#0a0a0c]/55 border-b border-white/6">
       <a
         href="#top"
         className="font-mono text-[15px] font-medium tracking-[.01em] text-neutral-200"

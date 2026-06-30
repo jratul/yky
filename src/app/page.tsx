@@ -2,7 +2,6 @@ import { Header } from "@components/Header";
 import { Hero } from "@components/Hero";
 import { ExperienceSection } from "@components/ExperienceSection";
 import { ProjectsSection } from "@components/ProjectsSection";
-import { Contact, Footer } from "@components/Contact";
 
 export default function Home() {
   return (
@@ -11,8 +10,6 @@ export default function Home() {
       <Hero />
       <ExperienceSection />
       <ProjectsSection />
-      <Contact />
-      <Footer />
     </main>
   );
 }

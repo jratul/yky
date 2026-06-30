@@ -1,84 +1,63 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.css");
+
 @import "tailwindcss";
 
 @theme inline {
-  --font-headline: var(--font-manrope), sans-serif;
-  --font-body: var(--font-inter), sans-serif;
+  --color-accent: #5b8cff;
+  --font-sans: var(--font-pretendard), -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: var(--font-jetbrains), monospace;
+}
 
-  --color-primary: #003ec7;
-  --color-primary-container: #0052ff;
-  --color-on-primary: #ffffff;
-  --color-primary-fixed: #dde1ff;
-  --color-secondary: #565e74;
-  --color-secondary-container: #dae2fd;
-  --color-on-secondary-container: #5c647a;
-  --color-surface: #faf8ff;
-  --color-surface-container-lowest: #ffffff;
-  --color-surface-container-low: #f2f3ff;
-  --color-surface-container: #eaedff;
-  --color-surface-container-high: #e2e7ff;
-  --color-on-surface: #131b2e;
-  --color-on-surface-variant: #434656;
-  --color-outline-variant: #c3c5d9;
-  --color-inverse-surface: #283044;
-  --color-inverse-on-surface: #eef0ff;
+:root {
+  --accent: 91 140 255;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 html {
-  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
-  background-color: #faf8ff;
+  margin: 0;
+  background: #0a0a0c;
+  -webkit-font-smoothing: antialiased;
 }
 
-img {
-  -webkit-user-drag: none;
-  -khtml-user-drag: none;
-  -moz-user-drag: none;
-  -o-user-drag: none;
+::selection {
+  background: rgb(var(--accent) / 0.3);
+  color: #fff;
 }
 
-*,
-*:focus,
-*:hover {
-  outline: none;
-}
-
-.material-symbols-outlined {
-  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
-}
-
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(-10px);
-  }
-  to {
-    opacity: 1;
+@keyframes bobY {
+  0%,
+  100% {
     transform: translateY(0);
+    opacity: 0.65;
+  }
+  50% {
+    transform: translateY(7px);
+    opacity: 0.3;
   }
 }
 
-/* Swiper */
-.swiper .swiper-slide {
-  height: auto;
-  background-color: #faf8ff;
+@keyframes glowPulse {
+  0%,
+  100% {
+    opacity: 0.55;
+  }
+  50% {
+    opacity: 0.85;
+  }
 }
 
-.swiper-button-prev,
-.swiper-button-next,
-.swiper-button-prev:after,
-.swiper-button-next:after {
-  font-weight: bold;
-  font-size: 20px !important;
-  color: #003ec7;
-}
-
-.swiper-pagination-bullet {
-  background-color: #003ec7 !important;
-}
-
-.swiper-pagination {
-  top: 8px !important;
-  bottom: unset !important;
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  * {
+    animation: none !important;
+  }
 }

@@ -119,6 +119,7 @@ export const projects: Project[] = [
     tags: ["React", "TypeScript", "Tailwind"],
     github: "https://github.com/jratul/dowsing-dex",
     live: "https://dowsing-dex.vercel.app",
+    image: "/projects/dowsing-dex.webp",
   },
   {
     slug: "mokiru",
@@ -132,6 +133,7 @@ export const projects: Project[] = [
     tags: ["React", "TypeScript", "Tailwind"],
     github: "https://github.com/jratul/mokiru",
     live: "https://mokiru.vercel.app",
+    image: "/projects/mokiru.webp",
   },
   {
     slug: "tjsss",

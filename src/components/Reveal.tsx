@@ -42,7 +42,6 @@ export function Reveal({
   }, []);
 
   return (
-    // @ts-expect-error -- dynamic tag with ref
     <Tag
       ref={ref}
       style={{ transitionDelay: `${delay}ms` }}
